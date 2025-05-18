@@ -1,0 +1,95 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    border: 2px solid black;
+    height: 250px;
+    position: relative;
+}
+
+.title {
+    border: 2px solid black;
+    width: 40%;
+    height: 45px;
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -2px;
+    margin-bottom: 10px;
+}
+
+.content {
+    clear: right;
+    margin: 15px;
+}
+
+div.title.suisei {
+    background-color: #2a9df4;
+}
+
+div.title.kaela {
+    background-color: #FFDE21;
+}
+
+div.title.kiara {
+    background-color: orange;
+}
+
+div.container.kiara {
+    background-color: #FF7F50;
+}
+
+div.container.kaela {
+    background-color: #FFEE8C;
+}
+
+div.container.suisei {
+    background-color: lightskyblue;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 40px 0px;
+}
+
+/* desktop size */
+@media (min-width: 992px) {
+    .col-l-4 {
+        width: 30%;
+        float: left;
+        margin-left: 2%;
+    }
+}
+
+/* tablet size */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-m-6 {
+        width: 40%;
+
+        float: left;
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+
+    .col-m-12 {
+        clear: left;
+        width: 85%;
+        margin-left: 5%;
+    }
+}
+
+/* mobile size */
+@media (max-width: 767px) {
+    .col-s-12 {
+        display: block;
+        margin: 20px auto;
+        width: 75%;
+    }
+}
